@@ -19,5 +19,7 @@
 </script>
 
 <style>
+  /* 导入公共的css文件 */
   @import "assets/css/base.css";
+  
 </style>

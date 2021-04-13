@@ -9,6 +9,7 @@
 </template>
 
 <script>
+  // 将需要导入的文件在 index.js文件里作整合，再统一导出
   import {Swiper, SwiperItem} from 'components/common/swiper'
 
   export default {

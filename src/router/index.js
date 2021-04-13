@@ -13,6 +13,7 @@ Vue.use(VueRouter)
 // 2.创建router
 const routes = [
   {
+    // 重定向
     path: '',
     redirect: '/home'
   },

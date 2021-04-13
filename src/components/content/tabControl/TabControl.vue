@@ -1,5 +1,8 @@
 <template>
   <div class="tab-control">
+    <!-- 没有用插槽 ，是因为他们的样式是一样的，只有文字不一样
+      而顶部导航栏用了插槽是因为内容太不一样了，只有存放的位置固定
+     -->
     <div v-for="(item, index) in titles"
          class="tab-control-item"
          :class="{active: index === currentIndex}"

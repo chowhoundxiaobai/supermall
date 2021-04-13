@@ -1,13 +1,22 @@
+/* 引用normalize.css文件  一般公司项目开发都会引用此文件 可在gitHub上搜索到 */
 @import "./normalize.css";
+
 
 /*:root -> 获取根元素html*/
 :root {
   --color-text: #666;
-  --color-high-text: #ff5777;
-  --color-tint: #ff8198;
+  --color-high-text: #ff5777;/* 字体高亮时的颜色 */
+  --color-tint: #ff8198; /* 背景颜色 */
   --color-background: #fff;
   --font-size: 14px;
   --line-height: 1.5;
+
+  /* 
+    定义css变量
+    可这样使用：
+    font-size: var(--font-size);
+  
+  */
 }
 
 *,

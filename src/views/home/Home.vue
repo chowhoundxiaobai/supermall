@@ -1,5 +1,7 @@
 <template>
   <div id="home" class="wrapper">
+    <!-- 插槽的使用 slot="center" 指定替换哪个插槽-->
+    <!-- 独立的东西写再另外的文件里 如swiper -->
     <nav-bar class="home-nav"><div slot="center">购物街</div></nav-bar>
     <tab-control :titles="['流行', '新款', '精选']"
                  @tabClick="tabClick"
@@ -143,6 +145,7 @@
       getHomeGoods(type) {
         const page = this.goods[type].page + 1
         getHomeGoods(type, page).then(res => {
+          console.log(res, "2021-4-13，res 无")
           this.goods[type].list.push(...res.data.list)
           this.goods[type].page += 1
 
@@ -162,7 +165,8 @@
   }
 
   .home-nav {
-    background-color: var(--color-tint);
+    background-color: var(--color-tint); /* 使用了在base.css 里自定义的变量 */
+    
     color: #fff;
 
     /*在使用浏览器原生滚动时, 为了让导航不跟随一起滚动*/
